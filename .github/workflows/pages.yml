@@ -18,8 +18,7 @@ jobs:
       run: |
         yarn install
         node build.js
-        cd docs
-        yarn install
+        yarn install --production
         yarn css
         git config user.name "${GITHUB_ACTOR}"
         git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
