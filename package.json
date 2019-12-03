@@ -1,0 +1,13 @@
+{
+  "name": "@gradebook/themes",
+  "version": "0.0.1",
+  "description": "School-specific themes for Gradebook Client ",
+  "main": "index.js",
+  "repository": "https://github.com/gradebook/school-themes",
+  "author": "Vikas Potluri <vikaspotluri123.github@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "js-yaml": "^3.13.1"
+  }
+}
