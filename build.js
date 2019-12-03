@@ -3,7 +3,7 @@ const compileThemes = require('./lib/compile-themes');
 
 async function run() {
 	const themeConfig = await compileThemes();
-	await writeFile('.ci-theme-data.json', themeConfig);
+	// await writeFile('.ci-theme-data.json', themeConfig);
 }
 
 run().catch(error => {
