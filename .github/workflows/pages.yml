@@ -5,13 +5,15 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.ref == 'master'
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
-      run: echo "$GITHUB____ACTOR"
+      run: |
+        echo "$GITHUB____ACTOR"
+        echo "$GITHUB____REF"
       env:
         GITHUB____ACTOR: ${{ github.actor }}
+        GITHUB____REF: ${{ github.ref }}
     - name: Update docs
       run: |
         yarn install
