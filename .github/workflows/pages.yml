@@ -29,12 +29,12 @@ jobs:
         git remote add origin "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
         git branch | sed -n '/\* /s///p'
         echo "Checking out master"
-        git checkout master
+        git checkout -b master
         echo "Adding docs"
         git add docs
         echo "committing changes"
         git commit -m ":rocket: update docs" || echo "No changes here 🧹"
         echo "pushing changes"
-        git push origin master
+        git push -u origin master
       env:
         TOKEN: ${{ secrets.GITHUB_TOKEN }}
