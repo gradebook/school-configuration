@@ -25,7 +25,7 @@ jobs:
         git remote rm origin || true
         git remote add origin "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
         git add docs
-        git commit -m ":rocket: || echo "No changes here 🧹"
+        git commit -m ":rocket: update docs" || echo "No changes here 🧹"
         git push origin master
       env:
         TOKEN: ${{ secrets.GITHUB_TOKEN }}
