@@ -1,0 +1,15 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.school-list .school {
+	@apply text-center m-8 pt-8 pb-32 px-16 w-64 shadow text-white;
+
+	background: attr(data-bg, #fff);
+}
+
+.school-list .school:hover {
+	@apply shadow-lg;
+}

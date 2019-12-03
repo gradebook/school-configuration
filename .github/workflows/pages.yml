@@ -19,25 +19,22 @@ jobs:
         GITHUB____REF: ${{ github.ref }}
     - name: Update docs
       run: |
-        yarn install --production
-        node build.js
-        yarn css
-        echo "Updating git name"
         git config user.name "${GITHUB_ACTOR}"
-        echo "Updating git email"
         git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-        echo "Removing origin"
         git remote rm origin || true
-        echo "Adding origin with token"
         git remote add origin "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-        git branch | sed -n '/\* /s///p'
-        echo "Checking out master"
+        git checkout -b gh-pages
+        git pull origin gh-pages
         git checkout -b master
-        echo "Adding docs"
-        git add docs
-        echo "committing changes"
+        git pull origin master
+        yarn install --production
+        yarn css
+        node build.js
+        cp site built
+        git checkout gh-pages
+        mv built/* . -f
+        git add .
         git commit -m ":rocket: update docs" || echo "No changes here 🧹"
-        echo "pushing changes"
-        git push -u origin master
+        git push -u origin gh-pages
       env:
         TOKEN: ${{ secrets.GITHUB_TOKEN }}
