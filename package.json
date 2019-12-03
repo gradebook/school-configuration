@@ -1,15 +1,8 @@
 {
-  "name": "@gradebook/themes",
-  "version": "0.0.1",
-  "description": "School-specific themes for Gradebook Client ",
-  "main": "index.js",
-  "repository": "https://github.com/gradebook/school-themes",
-  "author": "Vikas Potluri <vikaspotluri123.github@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "lint": "xo",
-    "css": "postcss docs/assets/styles.css -o docs/assets/styles.min.css --verbose",
+    "css": "postcss assets/styles.css -o assets/styles.min.css --verbose",
     "css:dev": "yarn css --watch"
   },
   "dependencies": {
@@ -20,8 +13,5 @@
     "postcss": "^7.0.23",
     "postcss-cli": "^6.1.3",
     "tailwindcss": "^1.1.4"
-  },
-  "devDependencies": {
-    "xo": "^0.25.3"
   }
 }
