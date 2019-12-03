@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "css": "postcss assets/styles.css -o assets/styles.min.css",
+    "css": "postcss assets/styles.css -o assets/styles.min.css --verbose",
     "css:dev": "yarn css --watch"
   },
   "dependencies": {
