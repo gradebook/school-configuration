@@ -8,10 +8,18 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "lint": "xo"
+    "lint": "xo",
+    "css": "postcss docs/assets/styles.css -o docs/assets/styles.min.css --verbose",
+    "css:dev": "yarn css --watch"
   },
   "dependencies": {
-    "js-yaml": "^3.13.1"
+    "@fullhuman/postcss-purgecss": "^1.3.0",
+    "autoprefixer": "^9.7.3",
+    "cssnano": "^4.1.10",
+    "js-yaml": "^3.13.1",
+    "postcss": "^7.0.23",
+    "postcss-cli": "^6.1.3",
+    "tailwindcss": "^1.1.4"
   },
   "devDependencies": {
     "xo": "^0.25.3"
