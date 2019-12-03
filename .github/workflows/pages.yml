@@ -23,10 +23,9 @@ jobs:
         git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
         git remote rm origin || true
         git remote add origin "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-        git checkout -b gh-pages
-        git pull origin gh-pages
-        git checkout -b master
-        git pull origin master
+        git fetch origin gh-pages:gh-pages
+        git fetch origin master:master
+        git checkout master
         yarn install --production
         yarn css
         node build.js
