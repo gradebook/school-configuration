@@ -13,3 +13,7 @@
 .school-list .school:hover {
 	@apply shadow-lg;
 }
+
+.school-list {
+	background: magenta;
+}
