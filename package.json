@@ -7,7 +7,13 @@
   "author": "Vikas Potluri <vikaspotluri123.github@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "lint": "xo"
+  },
   "dependencies": {
     "js-yaml": "^3.13.1"
+  },
+  "devDependencies": {
+    "xo": "^0.25.3"
   }
 }

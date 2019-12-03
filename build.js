@@ -13,7 +13,7 @@ const queue = new Queue(processThemeFile);
 queue.events.on('idle', terminate);
 
 async function processThemeFile(filePath) {
-	// convert `/full/path/to/theme.yaml` to `theme`
+	// Convert `/full/path/to/theme.yaml` to `theme`
 	const key = filePath.split('.yaml').shift().split('/').pop().toLowerCase();
 	const payload = await parse(`themes/${filePath}`, key);
 
@@ -28,6 +28,7 @@ async function processThemeFile(filePath) {
 function terminate() {
 	queue.dumpErrors();
 	console.log(`Finished processing ${fileList.length} theme${fileList.length === 1 ? '' : 's'}`);
+	// eslint-disable-next-line unicorn/no-process-exit
 	process.exit(queue.numErrors);
 }
 
