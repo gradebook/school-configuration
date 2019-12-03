@@ -31,6 +31,7 @@ jobs:
         node build.js
         cp -r site built
         git checkout gh-pages
+        rm -rf assets
         mv built/* . -f
         git add .
         git commit -m ":rocket: update docs" || echo "No changes here 🧹"
