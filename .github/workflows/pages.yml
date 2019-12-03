@@ -1,0 +1,19 @@
+name: Update pages
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo "$GITHUB____ACTOR"
+      env:
+        GITHUB____ACTOR: ${{ github.actor }}
+    - name: Update docs
+      run: |
+        yarn install
+        node build.js
