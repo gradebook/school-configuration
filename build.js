@@ -37,4 +37,7 @@ async function run() {
 	queue.addAll(fileList);
 }
 
-run().catch(console.log);
+run().catch(error => {
+	console.log(error);
+	process.exit(1);
+});
