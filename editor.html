@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="/assets/styles.min.css" />
+	<title>Gradebook Theme Editor</title>
+	<style>
+		#editor-panel {
+			width: 360px;
+			transform: translateX(-360px);
+			transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+			z-index: 100;
+		}
+
+		#editor-toggle {
+			position: absolute;
+			top: calc(50vh - 30px);
+			right: -30px;
+			height: 60px;
+			width: 30px;
+			cursor: pointer;
+			background: rgba(0,0,255,0.75);
+			border: 2px solid rgba(255,0,0,0);
+			border-top-right-radius: 60px;
+			border-bottom-right-radius: 60px;
+		}
+
+		#editor-toggle img {
+			transform: rotate(0) translateX(-2.5px);
+		}
+
+		#editor-toggle:focus {
+			outline: none;
+			background: rgba(0,0,255,0.8);
+		}
+
+		#workarea {
+			transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+			z-index: 10;
+		}
+
+		.editor-open #editor-panel {
+			transform: translateX(0);
+		}
+
+		.editor-open #workarea {
+			width: calc(100vw - 360px);
+			transform: translateX(360px);
+		}
+
+		.editor-open #editor-toggle img {
+			transform: rotate(180deg) translateX(2.5px);
+		}
+	</style>
+</head>
+<body class="bg-gray-100 flex editor-open">
+	<div id="editor-panel" class="bg-white h-screen absolute">
+		<div class="px-32 py-4">
+			Testing
+		</div>
+		<button id="editor-toggle" aria-label="Toggle editor">
+			<img src="https://image.flaticon.com/icons/svg/25/25283.svg" alt="">
+		</button>
+	</div>
+	<main id="workarea" class="p-4 w-screen h-screen">
+		<h1>Hello World</h1>
+	</main>
+</body>
+<script>
+	document.getElementById('editor-toggle')
+		.addEventListener('click', () => document.body.classList.toggle('editor-open'));
+</script>
+</html>
