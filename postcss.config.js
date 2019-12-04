@@ -12,7 +12,7 @@ module.exports = {
 	plugins: [
 		require('tailwindcss'),
 		require('autoprefixer'),
-		process.env.npm_lifecycle_script.includes('--watch') ? null : purgecss,
+		process.env.npm_config_argv.includes('css:dev') ? null : purgecss,
 		require('cssnano')
 	]
 };
