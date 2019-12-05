@@ -118,8 +118,12 @@
 		root.style.setProperty(`--${variable}`, value);
 	}
 
-	function handleChange(varName) {
-		return event => updateProperty(varName, event.toHEXA().toString());
+	function handleChange(varName, instance) {
+		return event => {
+			const color = event.toHEXA().toString();
+			updateProperty(varName, color)
+			instance.setColor(color);
+		};
 	}
 
 	updateProperty('primary', PRIMARY_COLOR);
@@ -143,7 +147,7 @@
 	const primaryPickr = Pickr.create({el: '#primary-picker', default: PRIMARY_COLOR, ...corePickrOptions});
 	const secondaryPickr = Pickr.create({el: '#secondary-picker', default: SECONDARY_COLOR, ...corePickrOptions});
 
-	primaryPickr.on('change', handleChange('primary'));
-	secondaryPickr.on('change', handleChange('secondary'));
+	primaryPickr.on('change', handleChange('primary', primaryPickr));
+	secondaryPickr.on('change', handleChange('secondary', secondaryPickr));
 </script>
 </html>
