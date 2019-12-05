@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="/assets/pickr-theme.css" />
 	<link rel="stylesheet" href="/assets/styles.min.css" />
 	<title>Gradebook Theme Editor</title>
 	<style>
@@ -27,8 +28,9 @@
 			border-bottom-right-radius: 60px;
 		}
 
-		#editor-toggle img {
+		#editor-toggle svg {
 			transform: rotate(0) translateX(-2.5px);
+			fill: white;
 		}
 
 		#editor-toggle:focus {
@@ -50,26 +52,98 @@
 			transform: translateX(360px);
 		}
 
-		.editor-open #editor-toggle img {
-			transform: rotate(180deg) translateX(2.5px);
+		.editor-open #editor-toggle svg {
+			transform: rotate(180deg) translateX(3.5px);
+		}
+
+		/* The PickR instance has a height of 32px */
+		.color-picker-wrapper h2 {
+			line-height: 32px;
+		}
+	</style>
+	<style>
+		.primary {
+			color: var(--primary, #AFFF);
+		}
+
+		.secondary {
+			color: var(--secondary, rebeccapurple);
+		}
+
+		.bg-primary {
+			background-color: var(--primary, #AFFF);
+		}
+
+		.bg-secondary {
+			background-color: var(--secondary, rebeccapurple);
 		}
 	</style>
 </head>
 <body class="bg-gray-100 flex editor-open">
-	<div id="editor-panel" class="bg-white h-screen absolute">
-		<div class="px-32 py-4">
-			Testing
+	<div id="editor-panel" class="bg-white h-screen absolute shadow">
+		<h1 class="text-center font-bold text-xl my-8">Palette Editor</h1>
+		<div class="color-picker-wrapper my-8 justify-center flex">
+			<h2 class="uppercase text-sm text-gray-600 mx-4">Primary Color</h2>
+			<div id="primary-picker"></div>
+		</div>
+		<div class="color-picker-wrapper my-8 justify-center flex">
+			<h2 class="uppercase text-sm text-gray-600 mx-4">Secondary Color</h2>
+			<div id="secondary-picker"></div>
 		</div>
 		<button id="editor-toggle" aria-label="Toggle editor">
-			<img src="https://image.flaticon.com/icons/svg/25/25283.svg" alt="">
+			<svg viewBox="0 0 444.819 444.819">
+				<path
+					d="M352.025,196.712L165.884,10.848C159.029,3.615,150.469,0,140.187,0c-10.282,0-18.842,3.619-25.697,10.848L92.792,32.264 c-7.044,7.043-10.566,15.604-10.566,25.692c0,9.897,3.521,18.56,10.566,25.981l138.753,138.473L92.786,361.168 c-7.042,7.043-10.564,15.604-10.564,25.693c0,9.896,3.521,18.562,10.564,25.98l21.7,21.413 c7.043,7.043,15.612,10.564,25.697,10.564c10.089,0,18.656-3.521,25.697-10.564l186.145-185.864 c7.046-7.423,10.571-16.084,10.571-25.981C362.597,212.321,359.071,203.755,352.025,196.712z" />
+			</svg>
 		</button>
 	</div>
 	<main id="workarea" class="p-4 w-screen h-screen">
-		<h1>Hello World</h1>
+		<p class="py-4 my-4 text-center text-3xl primary">Primary Color</p>
+		<p class="py-4 my-4 text-center text-3xl secondary">Secondary Color</p>
+		<p class="py-4 my-4 text-center text-3xl bg-primary secondary">Primary Background</p>
+		<p class="py-4 my-4 text-center text-3xl primary bg-secondary">Secondary Background</p>
 	</main>
 </body>
+<script src="/assets/pickr.js"></script>
 <script>
 	document.getElementById('editor-toggle')
 		.addEventListener('click', () => document.body.classList.toggle('editor-open'));
+
+	const root = document.documentElement;
+	const PRIMARY_COLOR = '#500000';
+	const SECONDARY_COLOR = '#AAA';
+
+
+	function updateProperty(variable, value) {
+		root.style.setProperty(`--${variable}`, value);
+	}
+
+	function handleChange(varName) {
+		return event => updateProperty(varName, event.toHEXA().toString());
+	}
+
+	updateProperty('primary', PRIMARY_COLOR);
+	updateProperty('secondary', SECONDARY_COLOR);
+
+	const corePickrOptions= {
+		theme: 'monolith',
+		components: {
+			preview: true,
+			opacity: false,
+			hue: true,
+			interaction: {
+				hex: true,
+				rgba: true,
+				hsla: true,
+				input: true
+			}
+		}
+	};
+
+	const primaryPickr = Pickr.create({el: '#primary-picker', default: PRIMARY_COLOR, ...corePickrOptions});
+	const secondaryPickr = Pickr.create({el: '#secondary-picker', default: SECONDARY_COLOR, ...corePickrOptions});
+
+	primaryPickr.on('change', handleChange('primary'));
+	secondaryPickr.on('change', handleChange('secondary'));
 </script>
 </html>
