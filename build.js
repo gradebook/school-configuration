@@ -1,10 +1,21 @@
-const {writeFile} = require('fs').promises;
+const {writeFile, mkdir} = require('fs').promises;
 const compileSchools = require('./lib/compile-schools');
 
 async function run() {
-	const globalConfig = await compileSchools();
-	console.log(globalConfig);
-	await writeFile('.ci-school-data.json', globalConfig);
+	await mkdir('./dist/api/v0', {recursive: true});
+	const schoolList = await compileSchools();
+	const globalConfig = {};
+
+	const writeQueue = [];
+
+	for (const [name, contents] of schoolList) {
+		globalConfig[name] = contents;
+		writeQueue.push(writeFile(`./dist/api/v0/${name}.json`, JSON.stringify(contents)));
+	}
+
+	writeQueue.push(writeFile('./dist/api/v0/global.json', JSON.stringify(globalConfig)));
+
+	return Promise.all(writeQueue);
 }
 
 run().catch(error => {
