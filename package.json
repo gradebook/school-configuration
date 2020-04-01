@@ -1,8 +1,8 @@
 {
-  "name": "@gradebook/themes",
+  "name": "@gradebook/school-configuration",
   "version": "0.0.1",
-  "description": "School-specific themes for Gradebook Client ",
-  "repository": "https://github.com/gradebook/school-themes",
+  "description": "School-specific configuration for Gradebook ",
+  "repository": "https://github.com/gradebook/school-configuration",
   "author": "Vikas Potluri <vikaspotluri123.github@gmail.com>",
   "license": "MIT",
   "private": true,

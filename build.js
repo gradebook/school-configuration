@@ -1,9 +1,10 @@
 const {writeFile} = require('fs').promises;
-const compileThemes = require('./lib/compile-themes');
+const compileSchools = require('./lib/compile-schools');
 
 async function run() {
-	const themeConfig = await compileThemes();
-	// await writeFile('.ci-theme-data.json', themeConfig);
+	const globalConfig = await compileSchools();
+	console.log(globalConfig)
+	// await writeFile('.ci-school-data.json', globalConfig);
 }
 
 run().catch(error => {
