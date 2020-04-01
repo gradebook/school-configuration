@@ -24,5 +24,8 @@
   "devDependencies": {
     "http-server": "^0.12.0",
     "xo": "^0.25.3"
+  },
+  "xo": {
+    "ignore": ["site/**/*"]
   }
 }

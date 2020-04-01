@@ -3,8 +3,8 @@ const compileSchools = require('./lib/compile-schools');
 
 async function run() {
 	const globalConfig = await compileSchools();
-	console.log(globalConfig)
-	// await writeFile('.ci-school-data.json', globalConfig);
+	console.log(globalConfig);
+	await writeFile('.ci-school-data.json', globalConfig);
 }
 
 run().catch(error => {
