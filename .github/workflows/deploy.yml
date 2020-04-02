@@ -28,7 +28,7 @@ jobs:
     - name: Deploy
       uses: netlify/actions/cli@master
       with:
-        args: deploy --dir=dist --message="Deploy\ ${{ github.sha }}@${{ github.ref }}" --prod
+        args: deploy --dir=dist --message="${{ github.sha }}@${{ github.ref }}" --prod
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
