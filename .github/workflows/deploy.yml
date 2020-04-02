@@ -28,8 +28,9 @@ jobs:
     - name: Build
       run: node build.js
     - name: Deploy
-      run: netlify deploy --dir=dist --message "Deploy $GITHUB_SHA@$GITHUB_REF"
+      uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=dist --message "Deploy ${{ github.sha }}@${{ github.ref }}"
       env:
-        CI: true
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
