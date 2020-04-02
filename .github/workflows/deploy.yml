@@ -20,9 +20,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-yarn-
     - name: Install Dependencies
-      run: |
-        yarn install --frozen-lockfile
-        yarn global add netlify-cli
+      run: yarn install --frozen-lockfile
     - name: Lint
       run: yarn lint
     - name: Build
@@ -30,7 +28,7 @@ jobs:
     - name: Deploy
       uses: netlify/actions/cli@master
       with:
-        args: deploy --dir=dist --message "Deploy ${{ github.sha }}@${{ github.ref }}"
+        args: deploy --dir=dist --message="Deploy ${{ github.sha }}@${{ github.ref }}"
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
