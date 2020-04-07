@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "http-server": "0.12.1",
-    "xo": "0.28.1"
+    "xo": "0.28.3"
   },
   "xo": {
     "ignore": [
