@@ -6,7 +6,7 @@
     "css:dev": "yarn css --watch"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "1.3.0",
+    "@fullhuman/postcss-purgecss": "2.1.0",
     "autoprefixer": "9.7.5",
     "cssnano": "4.1.10",
     "js-yaml": "3.13.1",
