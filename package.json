@@ -22,7 +22,7 @@
     "tailwindcss": "1.2.0"
   },
   "devDependencies": {
-    "http-server": "0.12.1",
+    "http-server": "0.12.3",
     "xo": "0.28.3"
   },
   "xo": {
