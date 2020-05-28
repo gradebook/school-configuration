@@ -1,4 +1,5 @@
 const {writeFile, mkdir} = require('fs').promises;
+const {copy} = require('fs-extra');
 const compileSchools = require('./lib/compile-schools');
 
 async function run() {
@@ -14,6 +15,10 @@ async function run() {
 	}
 
 	writeQueue.push(writeFile('./dist/api/v0/global.json', JSON.stringify(globalConfig)));
+
+	writeQueue.push(
+		copy('./site', './dist')
+	);
 
 	return Promise.all(writeQueue);
 }
