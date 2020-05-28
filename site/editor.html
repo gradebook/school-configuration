@@ -43,6 +43,12 @@
 			z-index: 10;
 		}
 
+		#icons {
+			display: flex;
+			gap: 1em;
+			justify-content: center;
+		}
+
 		.editor-open #editor-panel {
 			transform: translateX(0);
 		}
@@ -77,6 +83,10 @@
 		.bg-secondary {
 			background-color: var(--secondary, rebeccapurple);
 		}
+
+		.bg-light {
+			background-color: var(--light, #dedede);
+		}
 	</style>
 </head>
 <body class="bg-gray-100 flex editor-open">
@@ -102,6 +112,40 @@
 		<p class="py-4 my-4 text-center text-3xl secondary">Secondary Color</p>
 		<p class="py-4 my-4 text-center text-3xl bg-primary secondary">Primary Background</p>
 		<p class="py-4 my-4 text-center text-3xl primary bg-secondary">Secondary Background</p>
+		<div id="icons">
+			<p class="p-8 w-48 bg-light">
+				<svg class="w-32" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" alt="Gradebook logo">
+					<style>
+						path.primary { fill: var(--primary); }
+						polyline.primary { stroke: var(--primary); stroke-width: 4; stroke-linecap: round; }
+					</style>
+
+					<g fill="none" fill-rule="evenodd">
+						<!-- cover -->
+						<path class="primary" d="M97 16 L167 44 L96 83 L23 53 z" />
+						<polyline class="primary" points="25 54 25 81 96 111 167 71" />
+						<polyline class="primary" points="25 93 25 113 96 143 167 103" />
+						<polyline class="primary" points="25 125 25 145 96 175 167 135" />
+					</g>
+				</svg>
+			</p>
+			<p class="p-8 w-48 bg-primary">
+				<svg class="w-32" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" alt="Gradebook logo">
+					<style>
+						path.white { fill: #eee; }
+						polyline.white { stroke: #eee; stroke-width: 4; stroke-linecap: round; }
+					</style>
+
+					<g fill="none" fill-rule="evenodd">
+						<!-- cover -->
+						<path class="white" d="M97 16 L167 44 L96 83 L23 53 z" />
+						<polyline class="white" points="25 54 25 81 96 111 167 71" />
+						<polyline class="white" points="25 93 25 113 96 143 167 103" />
+						<polyline class="white" points="25 125 25 145 96 175 167 135" />
+					</g>
+				</svg>
+			</p>
+		</div>
 	</main>
 </body>
 <script src="/assets/pickr.js"></script>
