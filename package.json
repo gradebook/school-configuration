@@ -13,7 +13,7 @@
     "dev": "hs site -c-1"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "2.1.2",
+    "@fullhuman/postcss-purgecss": "2.2.0",
     "autoprefixer": "9.7.6",
     "cssnano": "4.1.10",
     "js-yaml": "3.13.1",
