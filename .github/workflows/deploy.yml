@@ -25,7 +25,9 @@ jobs:
       run: yarn install --frozen-lockfile
     - name: Lint
       run: yarn lint
-    - name: Build
+    - name: Compile CSS
+      run: yarn css
+    - name: Generate JSON objects
       run: node build.js
     - name: Deploy
       if: "github.event_name != 'pull_request'"
