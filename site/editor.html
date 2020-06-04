@@ -148,8 +148,12 @@
 		.addEventListener('click', () => document.body.classList.toggle('editor-open'));
 
 	const root = document.documentElement;
-	const PRIMARY_COLOR = '#500000';
-	const SECONDARY_COLOR = '#AAA';
+	let PRIMARY_COLOR = '#500000';
+	let SECONDARY_COLOR = '#AAA';
+	const urlParams = new URLSearchParams(window.location.search);
+	if (urlParams.has('primary')) {
+		PRIMARY_COLOR =  '#' + urlParams.get('primary');
+	}
 
 
 	function updateProperty(variable, value) {
