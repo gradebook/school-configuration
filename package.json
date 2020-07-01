@@ -22,7 +22,7 @@
     "tailwindcss": "1.4.1"
   },
   "devDependencies": {
-    "fs-extra": "9.0.0",
+    "fs-extra": "9.0.1",
     "http-server": "0.12.3",
     "xo": "0.30.0"
   },
