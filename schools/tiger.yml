@@ -1,5 +1,6 @@
 version: 0.1
 name: Tiger
-primary: '#f66733'
-hover: '#ff8a38'
-background: 'https://static.gradebook.app/sYbR9JXKTI/tiger.jpg'
+theme:
+  primary: '#f66733'
+  hover: '#ff8a38'
+  background: 'https://static.gradebook.app/sYbR9JXKTI/tiger.jpg'

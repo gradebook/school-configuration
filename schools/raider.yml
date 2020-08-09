@@ -1,5 +1,6 @@
 version: 0.1
 name: Raider
-primary: '#aa0000'
-hover: '#880000'
-background: 'https://static.gradebook.app/sYbR9JXKTI/raider.jpg'
+theme:
+  primary: '#aa0000'
+  hover: '#880000'
+  background: 'https://static.gradebook.app/sYbR9JXKTI/raider.jpg'

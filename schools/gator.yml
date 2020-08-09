@@ -1,5 +1,6 @@
 version: 0.1
 name: Gator
-primary: '#0021a5'
-hover: '#0032fb'
-background: 'https://static.gradebook.app/sYbR9JXKTI/gator.jpg'
+theme:
+  primary: '#0021a5'
+  hover: '#0032fb'
+  background: 'https://static.gradebook.app/sYbR9JXKTI/gator.jpg'
