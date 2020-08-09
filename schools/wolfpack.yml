@@ -1,5 +1,6 @@
 version: 0.1
 name: Wolfpack
-primary: '#000000'
-hover: '#cc0000'
-background: 'https://static.gradebook.app/sYbR9JXKTI/wolfpack.jpg'
+theme:
+  primary: '#000000'
+  hover: '#cc0000'
+  background: 'https://static.gradebook.app/sYbR9JXKTI/wolfpack.jpg'

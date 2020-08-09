@@ -1,5 +1,6 @@
 version: 0.1
 name: ''
-primary: '#5E3B4D'
-hover: '#7e4f67'
-background: 'https://static.gradebook.app/sYbR9JXKTI/generic.jpg'
+theme:
+  primary: '#5E3B4D'
+  hover: '#7e4f67'
+  background: 'https://static.gradebook.app/sYbR9JXKTI/generic.jpg'
