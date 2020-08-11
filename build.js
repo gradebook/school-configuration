@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const {writeFile, mkdir} = require('fs').promises;
 const {copy} = require('fs-extra');
 const compileSchools = require('./lib/compile-schools');
@@ -25,6 +27,5 @@ async function run() {
 
 run().catch(error => {
 	console.log(error.excludeStack ? error.toString() : error);
-	// eslint-disable-next-line unicorn/no-process-exit
 	process.exit(1);
 });
