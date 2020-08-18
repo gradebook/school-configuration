@@ -31,7 +31,13 @@ jobs:
       run: node build.js
     - name: Deploy
       if: "github.event_name != 'pull_request'"
-      run: ./deploy.sh
+      run: ./scripts/deploy.sh
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+    - name: Reload
+      if: "github.event_name != 'pull_request'"
+      run: ./scripts/reload.js
+      env:
+        WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
+        WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
