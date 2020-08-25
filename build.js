@@ -13,7 +13,10 @@ async function run() {
 
 	for (const [name, contents] of schoolList) {
 		globalConfig[name] = contents;
-		writeQueue.push(writeFile(`./dist/api/v0/${name}.json`, JSON.stringify(contents)));
+		const singleFile = {
+			[name]: contents
+		};
+		writeQueue.push(writeFile(`./dist/api/v0/${name}.json`, JSON.stringify(singleFile)));
 	}
 
 	writeQueue.push(writeFile('./dist/api/v0/global.json', JSON.stringify(globalConfig)));
