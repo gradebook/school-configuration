@@ -22,7 +22,7 @@
     "tailwindcss": "1.6.0"
   },
   "devDependencies": {
-    "@gradebook/actions-hook": "^0.2.0",
+    "@gradebook/actions-hook": "0.2.0",
     "fs-extra": "9.0.1",
     "http-server": "0.12.3",
     "xo": "0.32.1"

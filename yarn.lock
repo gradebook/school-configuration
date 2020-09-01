@@ -101,7 +101,7 @@
     postcss "7.0.32"
     purgecss "^2.3.0"
 
-"@gradebook/actions-hook@^0.2.0":
+"@gradebook/actions-hook@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@gradebook/actions-hook/-/actions-hook-0.2.0.tgz#af4eb5033a64566d1375e4de31564b23ae749d6f"
   integrity sha512-zgFk4SWAHyV5pexTCq+FPoBw4kPOhY9AYTg0DPSai5BkxjfCzNLY6H/IZ87mmSwLhxVgNlP0jP83jfpShliX1Q==
