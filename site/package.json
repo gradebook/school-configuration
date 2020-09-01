@@ -11,7 +11,7 @@
     "cssnano": "4.1.10",
     "js-yaml": "3.14.0",
     "postcss": "7.0.32",
-    "postcss-cli": "7.1.1",
+    "postcss-cli": "7.1.2",
     "tailwindcss": "1.6.0"
   }
 }
