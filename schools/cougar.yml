@@ -1,0 +1,7 @@
+version: 0.1
+name: Cougar
+gpa: false
+theme:
+  primary: '#C8102E'
+  hover: '#960C22'
+  background: 'https://static.gradebook.app/sYbR9JXKTI/cougar.jpg'
