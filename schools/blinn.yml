@@ -1,0 +1,7 @@
+version: 0.1
+name: Blinn
+gpa: false
+theme:
+  primary: '#0033A0'
+  hover: '#002D72'
+  background: 'https://static.gradebook.app/sYbR9JXKTI/blinn.jpg'
