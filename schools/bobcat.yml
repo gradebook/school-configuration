@@ -1,0 +1,7 @@
+version: 0.1
+name: Bobcat
+gpa: true
+theme:
+  primary: '#501214'
+  hover: '#8d2024'
+  background: 'https://static.gradebook.app/sYbR9JXKTI/bobcat.jpg'
