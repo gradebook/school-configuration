@@ -1,0 +1,7 @@
+version: 0.1
+name: Comet
+gpa: false
+theme:
+  primary: '#154734'
+  hover: '#e87500'
+  background: 'https://static.gradebook.app/sYbR9JXKTI/comet.jpg'
