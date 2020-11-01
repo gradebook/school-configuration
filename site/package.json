@@ -12,6 +12,6 @@
     "js-yaml": "3.14.0",
     "postcss": "7.0.35",
     "postcss-cli": "7.1.2",
-    "tailwindcss": "1.8.10"
+    "tailwindcss": "1.9.6"
   }
 }
