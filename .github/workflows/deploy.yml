@@ -26,7 +26,11 @@ jobs:
     - name: Lint
       run: yarn lint
     - name: Compile CSS
-      run: yarn css
+      run: |
+        yarn css
+        yarn minify
+      env:
+        NODE_ENV: production
     - name: Generate JSON objects
       run: node build.js
     - name: Deploy

@@ -8,18 +8,17 @@
   "private": true,
   "scripts": {
     "lint": "xo",
-    "css": "postcss site/assets/styles.css -o site/assets/styles.min.css --verbose",
-    "css:dev": "yarn css --watch",
-    "dev": "hs site -c-1"
+    "css": "tailwind build ./site/assets/styles.css -o site/assets/styles.min.css",
+    "predev": "yarn css",
+    "dev": "hs site -c-1",
+    "minify": "cssnano ./site/assets/styles.min.css ./site/assets/styles.min.css"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "2.3.0",
-    "autoprefixer": "9.8.6",
-    "cssnano": "4.1.10",
-    "js-yaml": "3.14.0",
-    "postcss": "7.0.35",
-    "postcss-cli": "7.1.2",
-    "tailwindcss": "1.9.6"
+    "autoprefixer": "10.1.0",
+    "cssnano-cli": "^1.0.5",
+    "js-yaml": "3.14.1",
+    "postcss": "8.2.1",
+    "tailwindcss": "2.0.2"
   },
   "devDependencies": {
     "@gradebook/actions-hook": "0.2.0",

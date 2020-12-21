@@ -4,19 +4,21 @@
 
 @tailwind utilities;
 
-.hover\:scale:hover {
-	transform: scale(1.04);
-}
+@layer components {
+	.hover\:scale:hover {
+		transform: scale(1.04);
+	}
 
-.school-list .school {
-	@apply text-center m-8 pt-8 pb-32 px-16 w-64 shadow-md text-white;
+	.school-list .school {
+		@apply text-center m-8 pt-8 pb-32 px-16 w-64 shadow-md text-white;
 
-	background: attr(data-bg, #fff);
+		background: attr(data-bg, #fff);
 
-	transition: transform 350ms cubic-bezier(0.165, 0.84, 0.44, 1),
-							box-shadow 350ms linear;
-}
+		transition: transform 350ms cubic-bezier(0.165, 0.84, 0.44, 1),
+								box-shadow 350ms linear;
+	}
 
-.school-list .school:hover {
-	@apply shadow-xl;
+	.school-list .school:hover {
+		@apply shadow-xl;
+	}
 }
