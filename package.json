@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "autoprefixer": "10.1.0",
-    "cssnano-cli": "^1.0.5",
+    "cssnano-cli": "1.0.5",
     "js-yaml": "3.14.1",
     "postcss": "8.2.1",
     "tailwindcss": "2.0.2"
