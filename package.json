@@ -14,17 +14,17 @@
     "minify": "cssnano ./site/assets/styles.min.css ./site/assets/styles.min.css"
   },
   "dependencies": {
-    "autoprefixer": "10.1.0",
+    "autoprefixer": "10.2.3",
     "cssnano-cli": "1.0.5",
-    "js-yaml": "3.14.1",
-    "postcss": "8.2.1",
+    "js-yaml": "4.0.0",
+    "postcss": "8.2.4",
     "tailwindcss": "2.0.2"
   },
   "devDependencies": {
     "@gradebook/actions-hook": "0.2.0",
-    "fs-extra": "9.0.1",
+    "fs-extra": "9.1.0",
     "http-server": "0.12.3",
-    "xo": "0.36.1"
+    "xo": "0.37.1"
   },
   "xo": {
     "ignores": [
