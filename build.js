@@ -28,7 +28,7 @@ async function run() {
 		writeQueue.push(writeFile(`./dist/api/v1/${name}/manifest.webmanifest`, renderManifest(name, contents.theme.primary)));
 	}
 
-	writeQueue.push(writeFile('./dist/api/v1/config.json', JSON.stringify(globalConfig)));
+	writeQueue.push(writeFile('./dist/api/v1/global.json', JSON.stringify(globalConfig)));
 
 	writeQueue.push(
 		copy('./site', './dist')
