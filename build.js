@@ -31,7 +31,8 @@ async function run() {
 	writeQueue.push(writeFile('./dist/api/v1/config.json', JSON.stringify(globalConfig)));
 
 	writeQueue.push(
-		copy('./site', './dist')
+		copy('./site', './dist'),
+		copy('_headers', './dist/_headers')
 	);
 
 	return Promise.all(writeQueue);
