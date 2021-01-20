@@ -31,11 +31,11 @@ async function run() {
 	writeQueue.push(writeFile('./dist/api/v1/global.json', JSON.stringify(globalConfig)));
 
 	writeQueue.push(
-		copy('./site', './dist')
+		copy('./site', './dist'), // Copy frontend to dist folder. Note that dist folder already exists
+		copy('_headers', './dist/_headers')
 	);
 
-	await Promise.all(writeQueue);
-	await copy('_headers', './dist/_headers');
+	return Promise.all(writeQueue);
 }
 
 run().catch(error => {
