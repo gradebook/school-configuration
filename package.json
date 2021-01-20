@@ -5,6 +5,7 @@
   "repository": "https://github.com/gradebook/school-configuration",
   "author": "Vikas Potluri <vikaspotluri123.github@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "private": true,
   "scripts": {
     "lint": "xo",

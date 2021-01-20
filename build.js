@@ -1,11 +1,11 @@
 #! /usr/bin/env node
 
-const {writeFile, mkdir} = require('fs').promises;
-const {copy} = require('fs-extra');
-const compileSchools = require('./lib/compile-schools');
-const renderMaskableIcon = require('./lib/templates/icon-maskable');
-const renderFavicon = require('./lib/templates/favicon');
-const renderManifest = require('./lib/templates/webmanifest');
+import {writeFile, mkdir} from 'fs/promises';
+import {copy} from 'fs-extra';
+import compileSchools from './lib/compile-schools.js';
+import renderMaskableIcon from './lib/templates/icon-maskable.js';
+import renderFavicon from './lib/templates/favicon.js';
+import renderManifest from './lib/templates/webmanifest.js';
 
 async function run() {
 	await mkdir('./dist/api/v1', {recursive: true});
