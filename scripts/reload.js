@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
 // @ts-check
-const {sendPayload} = require('@gradebook/actions-hook');
+import {sendPayload} from '@gradebook/actions-hook';
 
 async function doTheWork() {
 	try {
