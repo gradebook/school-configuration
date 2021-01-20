@@ -1,6 +1,8 @@
 /api/v1/*/manifest.webmanifest
 	Content-Type: application/manifest+json
 	Cache-Control: public, max-age=600
+	Access-Control-Allow-Origin: *
+	Access-Control-Allow-Methods: GET
 
 /api/v1/*/*.svg
 	Cache-Control: public, max-age=600
