@@ -3,9 +3,8 @@
 const {writeFile, mkdir} = require('fs').promises;
 const {copy} = require('fs-extra');
 const compileSchools = require('./lib/compile-schools');
-const maskableIcon = require('./lib/icons/icon-maskable');
-const icon = require('./lib/icons/icon');
-const favicon = require('./lib/icons/favicon');
+const renderMaskableIcon = require('./lib/templates/icon-maskable');
+const renderFavicon = require('./lib/templates/favicon');
 
 async function run() {
 	await mkdir('./dist/api/v0', {recursive: true});
@@ -20,12 +19,11 @@ async function run() {
 			[name]: contents
 		};
 		writeQueue.push(writeFile(`./dist/api/v0/${name}.json`, JSON.stringify(singleFile)));
-		writeQueue.push(writeFile(`./dist/api/v0/${name}-icon-maskable.svg`, maskableIcon(contents.theme.primary)));
-		writeQueue.push(writeFile(`./dist/api/v0/${name}-favicon.svg`, favicon(contents.theme.primary)));
+		writeQueue.push(writeFile(`./dist/api/v0/${name}-icon-maskable.svg`, renderMaskableIcon(contents.theme.primary)));
+		writeQueue.push(writeFile(`./dist/api/v0/${name}-favicon.svg`, renderFavicon(contents.theme.primary)));
 	}
 
 	writeQueue.push(writeFile('./dist/api/v0/global.json', JSON.stringify(globalConfig)));
-	writeQueue.push(writeFile('./dist/api/v0/icon.svg', icon));
 
 	writeQueue.push(
 		copy('./site', './dist')
