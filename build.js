@@ -20,6 +20,7 @@ async function run() {
 			[name]: contents
 		};
 
+		// eslint-disable-next-line no-await-in-loop
 		await mkdir(`./dist/api/v1/${name}`, {recursive: true});
 		writeQueue.push(writeFile(`./dist/api/v1/${name}/config.json`, JSON.stringify(singleFile)));
 		writeQueue.push(writeFile(`./dist/api/v1/${name}/icon-maskable.svg`, renderMaskableIcon(contents.theme.primary)));
