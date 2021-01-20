@@ -31,11 +31,11 @@ async function run() {
 	writeQueue.push(writeFile('./dist/api/v1/config.json', JSON.stringify(globalConfig)));
 
 	writeQueue.push(
-		copy('./site', './dist'),
-		copy('_headers', './dist/_headers')
+		copy('./site', './dist')
 	);
 
-	return Promise.all(writeQueue);
+	await Promise.all(writeQueue);
+	await copy('_headers', './dist/_headers');
 }
 
 run().catch(error => {
