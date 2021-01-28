@@ -11,7 +11,7 @@
     "lint": "xo",
     "css": "tailwind build ./site/assets/styles.css -o site/assets/styles.min.css -c tailwind.config.cjs",
     "predev": "yarn css",
-    "dev": "hs site -c-1",
+    "dev": "hs dist -c-1",
     "minify": "cssnano ./site/assets/styles.min.css ./site/assets/styles.min.css"
   },
   "dependencies": {
