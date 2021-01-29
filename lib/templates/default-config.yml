@@ -5,3 +5,40 @@ theme:
   primary: '#5E3B4D'
   hover: '#7e4f67'
   background: 'https://static.gradebook.app/sYbR9JXKTI/generic.jpg'
+cutoffs:
+  A+:
+    default: 93
+    qualityPoints: null
+  A:
+    default: 90
+    qualityPoints: null
+  A-:
+    default: 87
+    qualityPoints: null
+  B+:
+    default: 83
+    qualityPoints: null
+  B:
+    default: 80
+    qualityPoints: null
+  B-:
+    default: 77
+    qualityPoints: null
+  C+:
+    default: 73
+    qualityPoints: null
+  C:
+    default: 70
+    qualityPoints: null
+  C-:
+    default: 67
+    qualityPoints: null
+  D+:
+    default: 63
+    qualityPoints: null
+  D:
+    default: 60
+    qualityPoints: null
+  D-:
+    default: 57
+    qualityPoints: null
