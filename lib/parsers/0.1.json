@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "v0.1",
+  "description": "v0.1 of school config schema",
+  "type": "object",
+  "additionalProperties": false,
+  "minProperties": 0,
+  "required": ["version", "name", "theme"],
+  "properties": {
+    "version": {
+      "oneOf": [
+        {"type": "number", "const": 0.1},
+        {"type": "string", "const": "0.1"}
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "alias": {
+      "type": "string"
+    },
+    "gpa": {
+      "type": "boolean"
+    },
+    "theme": {
+      "type": "object",
+      "required": ["primary", "hover"],
+      "properties": {
+        "primary": {
+          "type": "string",
+          "format": "color"
+        },
+        "hover": {
+          "type": "string",
+          "format": "color"
+        },
+        "background": {
+          "type": "string",
+          "format": "url"
+        }
+      }
+    },
+    "cutoffs": {
+      "type": "object",
+      "minProperties": 4,
+      "maxProperties": 12,
+      "propertyNames": {
+        "enum": [
+          "A+",
+          "A",
+          "A-",
+          "B+",
+          "B",
+          "B-",
+          "C+",
+          "C",
+          "C-",
+          "D+",
+          "D",
+          "D-"
+        ]
+      },
+      "patternProperties": {
+        ".*": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "defaultValue": {
+              "type": "number",
+              "minimum": 50,
+              "maximum": 100
+            },
+            "qualityPoints": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 5
+            }
+          }
+        }
+      }
+    }
+  }
+}
