@@ -16,9 +16,6 @@
     "name": {
       "type": "string"
     },
-    "alias": {
-      "type": "string"
-    },
     "gpa": {
       "type": "boolean"
     },
