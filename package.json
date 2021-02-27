@@ -11,10 +11,11 @@
     "lint": "xo",
     "css": "tailwind build ./site/assets/styles.css -o site/assets/styles.min.css -c tailwind.config.cjs",
     "predev": "yarn css",
-    "dev": "hs site -c-1",
+    "dev": "hs dist -c-1",
     "minify": "cssnano ./site/assets/styles.min.css ./site/assets/styles.min.css"
   },
   "dependencies": {
+    "ajv": "^7.0.3",
     "autoprefixer": "10.2.3",
     "cssnano-cli": "1.0.5",
     "js-yaml": "4.0.0",
