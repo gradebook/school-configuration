@@ -5,3 +5,37 @@ theme:
   hover: '#f06c00'
   background: 'https://static.gradebook.app/sYbR9JXKTI/longhorn.jpg'
 gpa: false
+cutoffs:
+  A:
+    defaultValue: 93
+    qualityPoints: 4
+  A-:
+    defaultValue: 90
+    qualityPoints: 3.67
+  B+:
+    defaultValue: 87
+    qualityPoints: 3.33
+  B:
+    defaultValue: 83
+    qualityPoints: 3
+  B-:
+    defaultValue: 80
+    qualityPoints: 2.67
+  C+:
+    defaultValue: 77
+    qualityPoints: 2.33
+  C:
+    defaultValue: 73
+    qualityPoints: 2
+  C-:
+    defaultValue: 70
+    qualityPoints: 1.67
+  D+:
+    defaultValue: 67
+    qualityPoints: 1.33
+  D:
+    defaultValue: 63
+    qualityPoints: 1
+  D-:
+    defaultValue: 60
+    qualityPoints: 0.67
