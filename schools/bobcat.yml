@@ -5,3 +5,16 @@ theme:
   hover: '#8d2024'
   background: 'https://static.gradebook.app/sYbR9JXKTI/bobcat.jpg'
 gpa: true
+cutoffs:
+  A:
+    defaultValue: 90
+    qualityPoints: 4
+  B:
+    defaultValue: 80
+    qualityPoints: 3
+  C:
+    defaultValue: 70
+    qualityPoints: 2
+  D:
+    defaultValue: 60
+    qualityPoints: 1
