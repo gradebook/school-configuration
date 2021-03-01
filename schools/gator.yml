@@ -4,3 +4,37 @@ theme:
   primary: '#0021a5'
   hover: '#0032fb'
   background: 'https://static.gradebook.app/sYbR9JXKTI/gator.jpg'
+cutoffs:
+  A:
+    defaultValue: 90
+    qualityPoints: 4
+  A-:
+    defaultValue: 87
+    qualityPoints: 3.67
+  B+:
+    defaultValue: 83
+    qualityPoints: 3.33
+  B:
+    defaultValue: 80
+    qualityPoints: 3
+  B-:
+    defaultValue: 77
+    qualityPoints: 2.67
+  C+:
+    defaultValue: 73
+    qualityPoints: 2.33
+  C:
+    defaultValue: 70
+    qualityPoints: 2
+  C-:
+    defaultValue: 67
+    qualityPoints: 1.67
+  D+:
+    defaultValue: 63
+    qualityPoints: 1.33
+  D:
+    defaultValue: 60
+    qualityPoints: 1
+  D-:
+    defaultValue: 57
+    qualityPoints: 0.67
