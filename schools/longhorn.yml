@@ -1,7 +1,7 @@
 version: 0.1
 name: Longhorn
-gpa: false
 theme:
   primary: '#bf5700'
   hover: '#f06c00'
   background: 'https://static.gradebook.app/sYbR9JXKTI/longhorn.jpg'
+gpa: false

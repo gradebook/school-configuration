@@ -1,10 +1,10 @@
 version: 0.1
 name: ''
-gpa: true
 theme:
   primary: '#5E3B4D'
   hover: '#7e4f67'
   background: 'https://static.gradebook.app/sYbR9JXKTI/generic.jpg'
+gpa: true
 cutoffs:
   A+:
     defaultValue: 93
