@@ -22,15 +22,16 @@ async function run() {
 
 		// eslint-disable-next-line no-await-in-loop
 		await mkdir(`./dist/api/v1/${name}`, {recursive: true});
-		writeQueue.push(writeFile(`./dist/api/v1/${name}/config.json`, JSON.stringify(singleFile)));
-		writeQueue.push(writeFile(`./dist/api/v1/${name}/icon-maskable.svg`, renderMaskableIcon(contents.theme.primary)));
-		writeQueue.push(writeFile(`./dist/api/v1/${name}/favicon.svg`, renderFavicon(contents.theme.primary)));
-		writeQueue.push(writeFile(`./dist/api/v1/${name}/manifest.webmanifest`, renderManifest(name, contents.theme.primary)));
+		writeQueue.push(
+			writeFile(`./dist/api/v1/${name}/config.json`, JSON.stringify(singleFile)),
+			writeFile(`./dist/api/v1/${name}/icon-maskable.svg`, renderMaskableIcon(contents.theme.primary)),
+			writeFile(`./dist/api/v1/${name}/favicon.svg`, renderFavicon(contents.theme.primary)),
+			writeFile(`./dist/api/v1/${name}/manifest.webmanifest`, renderManifest(name, contents.theme.primary))
+		);
 	}
 
-	writeQueue.push(writeFile('./dist/api/v1/global.json', JSON.stringify(globalConfig)));
-
 	writeQueue.push(
+		writeFile('./dist/api/v1/global.json', JSON.stringify(globalConfig)),
 		copy('./site', './dist'), // Copy frontend to dist folder. Note that dist folder already exists
 		copy('_headers', './dist/_headers')
 	);
