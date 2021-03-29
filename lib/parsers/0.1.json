@@ -16,6 +16,9 @@
     "name": {
       "type": "string"
     },
+    "partner": {
+      "type": "boolean"
+    },
     "gpa": {
       "type": "boolean"
     },

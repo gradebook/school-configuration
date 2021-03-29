@@ -5,6 +5,7 @@ theme:
   hover: '#880000'
   background: 'https://static.gradebook.app/sYbR9JXKTI/aggiecorps.jpg'
 gpa: true
+partner: true
 cutoffs:
   A:
     defaultValue: 90
