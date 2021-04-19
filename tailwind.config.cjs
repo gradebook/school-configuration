@@ -1,13 +1,7 @@
 // @ts-check
-const isProduction = process.env.NODE_ENV === 'production';
-
 module.exports = {
-	purge: {
-		enabled: isProduction,
-		mode: 'all',
-		content: ['site/**/*.html']
-	},
+	mode: 'jit',
+	purge: ['site/**/*.html'],
 	theme: {},
-	variants: {},
-	plugins: []
+	variants: {}
 };
