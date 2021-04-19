@@ -41,7 +41,10 @@ jobs:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
     - name: Reload
       if: "github.event_name != 'pull_request'"
-      run: ./scripts/reload.js
+      run: |
+        echo "Waiting 5 seconds for Netlify deploy to complete"
+        sleep 5
+        ./scripts/reload.js
       env:
         WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
         WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
