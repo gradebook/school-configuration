@@ -4,41 +4,41 @@ theme:
   primary: '#5E3B4D'
   hover: '#7e4f67'
   background: 'https://static.gradebook.app/sYbR9JXKTI/generic.jpg'
-gpa: false
+gpa: true
 cutoffs:
   A+:
-    default: 93
-    qualityPoints: null
+    defaultValue: 93
+    qualityPoints: 4.3
   A:
-    default: 90
-    qualityPoints: null
+    defaultValue: 90
+    qualityPoints: 4
   A-:
-    default: 87
-    qualityPoints: null
+    defaultValue: 87
+    qualityPoints: 3.7
   B+:
-    default: 83
-    qualityPoints: null
+    defaultValue: 83
+    qualityPoints: 3.3
   B:
-    default: 80
-    qualityPoints: null
+    defaultValue: 80
+    qualityPoints: 3
   B-:
-    default: 77
-    qualityPoints: null
+    defaultValue: 77
+    qualityPoints: 2.7
   C+:
-    default: 73
-    qualityPoints: null
+    defaultValue: 73
+    qualityPoints: 2.3
   C:
-    default: 70
-    qualityPoints: null
+    defaultValue: 70
+    qualityPoints: 2
   C-:
-    default: 67
-    qualityPoints: null
+    defaultValue: 67
+    qualityPoints: 1.7
   D+:
-    default: 63
-    qualityPoints: null
+    defaultValue: 63
+    qualityPoints: 1.3
   D:
-    default: 60
-    qualityPoints: null
+    defaultValue: 60
+    qualityPoints: 1
   D-:
-    default: 57
-    qualityPoints: null
+    defaultValue: 57
+    qualityPoints: 0.7
