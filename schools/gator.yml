@@ -4,6 +4,7 @@ theme:
   primary: '#0021a5'
   hover: '#0032fb'
   background: 'https://static.gradebook.app/sYbR9JXKTI/gator.jpg'
+gpa: true
 cutoffs:
   A:
     defaultValue: 90
