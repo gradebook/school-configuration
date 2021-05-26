@@ -4,7 +4,7 @@ theme:
   primary: '#C8102E'
   hover: '#960C22'
   background: 'https://static.gradebook.app/sYbR9JXKTI/cougar.jpg'
-gpa: false
+gpa: true
 cutoffs:
   A:
     defaultValue: 93
