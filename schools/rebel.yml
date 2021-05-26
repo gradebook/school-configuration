@@ -4,3 +4,27 @@ theme:
   primary: '#14213d'
   hover: '#2e4c8d'
   background: 'https://static.gradebook.app/sYbR9JXKTI/rebel.jpg'
+gpa: true
+cutoffs:
+  A:
+    defaultValue: 90
+    qualityPoints: 4
+  A-:
+    qualityPoints: 3.7
+  B+:
+    qualityPoints: 3.3
+  B:
+    defaultValue: 80
+    qualityPoints: 3
+  B-:
+    qualityPoints: 2.7
+  C+:
+    qualityPoints: 2.3
+  C:
+    defaultValue: 70
+    qualityPoints: 2
+  C-:
+    qualityPoints: 1.7
+  D:
+    defaultValue: 60
+    qualityPoints: 1
