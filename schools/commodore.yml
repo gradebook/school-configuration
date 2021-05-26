@@ -4,3 +4,38 @@ theme:
   primary: '#000000'
   hover: '#866d4b'
   background: 'https://static.gradebook.app/sYbR9JXKTI/commodore.jpg'
+gpa: true
+cutoffs:
+  A:
+    defaultValue: 93
+    qualityPoints: 4
+  A-:
+    defaultValue: 90
+    qualityPoints: 3.7
+  B+:
+    defaultValue: 87
+    qualityPoints: 3.3
+  B:
+    defaultValue: 83
+    qualityPoints: 3
+  B-:
+    defaultValue: 80
+    qualityPoints: 2.7
+  C+:
+    defaultValue: 77
+    qualityPoints: 2.3
+  C:
+    defaultValue: 73
+    qualityPoints: 2
+  C-:
+    defaultValue: 70
+    qualityPoints: 1.7
+  D+:
+    defaultValue: 67
+    qualityPoints: 1.3
+  D:
+    defaultValue: 63
+    qualityPoints: 1
+  D-:
+    defaultValue: 60
+    qualityPoints: 0.7
