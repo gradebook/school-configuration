@@ -4,3 +4,41 @@ theme:
   primary: '#000000'
   hover: '#cc0000'
   background: 'https://static.gradebook.app/sYbR9JXKTI/wolfpack.jpg'
+gpa: true
+cutoffs:
+  A+:
+    defaultValue: 97
+    qualityPoints: 4.333
+  A:
+    defaultValue: 93
+    qualityPoints: 4
+  A-:
+    defaultValue: 90
+    qualityPoints: 3.667
+  B+:
+    defaultValue: 87
+    qualityPoints: 3.333
+  B:
+    defaultValue: 83
+    qualityPoints: 3
+  B-:
+    defaultValue: 80
+    qualityPoints: 2.667
+  C+:
+    defaultValue: 77
+    qualityPoints: 2.333
+  C:
+    defaultValue: 73
+    qualityPoints: 2
+  C-:
+    defaultValue: 70
+    qualityPoints: 1.667
+  D+:
+    defaultValue: 67
+    qualityPoints: 1.333
+  D:
+    defaultValue: 63
+    qualityPoints: 1
+  D-:
+    defaultValue: 60
+    qualityPoints: 0.667
