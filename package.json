@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "ajv": "8.2.0",
-    "autoprefixer": "10.2.5",
+    "autoprefixer": "10.2.6",
     "cssnano-cli": "1.0.5",
     "js-yaml": "4.1.0",
     "postcss": "8.2.13",
