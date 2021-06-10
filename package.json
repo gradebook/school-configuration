@@ -9,6 +9,7 @@
   "private": true,
   "scripts": {
     "lint": "xo",
+    "build": "node build.js",
     "css": "tailwind build ./site/assets/styles.css -o site/assets/styles.min.css -c tailwind.config.cjs",
     "predev": "yarn css",
     "dev": "hs dist -c-1",
