@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-import {writeFile, mkdir} from 'fs/promises';
+import {writeFile, mkdir} from 'node:fs/promises';
 import {copy} from 'fs-extra';
 import compileSchools from './lib/compile-schools.js';
 import renderMaskableIcon from './lib/templates/icon-maskable.js';
