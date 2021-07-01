@@ -27,7 +27,7 @@
     "@gradebook/actions-hook": "0.2.0",
     "fs-extra": "10.0.0",
     "http-server": "0.12.3",
-    "xo": "0.40.2"
+    "xo": "0.40.3"
   },
   "xo": {
     "ignores": [
