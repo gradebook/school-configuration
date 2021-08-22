@@ -65,7 +65,7 @@
           "type": "object",
           "additionalProperties": false,
           "required": [
-            "qualityPoints"
+            "defaultValue", "qualityPoints"
           ],
           "properties": {
             "defaultValue": {

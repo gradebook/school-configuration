@@ -8,29 +8,37 @@ gpa: true
 cutoffs:
   A+:
     qualityPoints: 4
+    defaultValue: 93
   A:
     qualityPoints: 4
     defaultValue: 90
   A-:
     qualityPoints: 3.67
+    defaultValue: 87
   B+:
     qualityPoints: 3.33
+    defaultValue: 83
   B:
     qualityPoints: 3
     defaultValue: 80
   B-:
     qualityPoints: 2.67
+    defaultValue: 77
   C+:
     qualityPoints: 2.33
+    defaultValue: 73
   C:
     qualityPoints: 2
     defaultValue: 70
   C-:
     qualityPoints: 1.67
+    defaultValue: 67
   D+:
     qualityPoints: 1.33
+    defaultValue: 63
   D:
     qualityPoints: 1
     defaultValue: 60
   D-:
     qualityPoints: 0.67
+    defaultValue: 57

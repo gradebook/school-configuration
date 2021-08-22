@@ -10,20 +10,25 @@ cutoffs:
     defaultValue: 90
     qualityPoints: 4
   A-:
+    defaultValue: 87
     qualityPoints: 3.7
   B+:
+    defaultValue: 83
     qualityPoints: 3.3
   B:
     defaultValue: 80
     qualityPoints: 3
   B-:
+    defaultValue: 77
     qualityPoints: 2.7
   C+:
+    defaultValue: 73
     qualityPoints: 2.3
   C:
     defaultValue: 70
     qualityPoints: 2
   C-:
+    defaultValue: 67
     qualityPoints: 1.7
   D:
     defaultValue: 60
