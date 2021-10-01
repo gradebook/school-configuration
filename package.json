@@ -21,7 +21,7 @@
     "cssnano-cli": "1.0.5",
     "js-yaml": "4.1.0",
     "postcss": "8.3.8",
-    "tailwindcss": "2.2.9"
+    "tailwindcss": "2.2.16"
   },
   "devDependencies": {
     "@gradebook/actions-hook": "0.2.0",
