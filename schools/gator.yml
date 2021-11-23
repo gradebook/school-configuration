@@ -5,6 +5,7 @@ theme:
   hover: '#0032fb'
   background: 'https://static.gradebook.app/sYbR9JXKTI/gator.jpg'
 gpa: true
+feedbackLink: 'https://docs.google.com/forms/d/e/1FAIpQLSegKY6UHxMZsxqZUnvx5XNnyJjSUVOUOfQnVws9oGN9msNLPw/viewform?usp=pp_url&entry.2135011275=Florida'
 cutoffs:
   A:
     defaultValue: 90

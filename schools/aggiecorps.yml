@@ -6,6 +6,7 @@ theme:
   background: 'https://static.gradebook.app/sYbR9JXKTI/aggiecorps.jpg'
 gpa: true
 partner: true
+feedbackLink: 'https://docs.google.com/forms/d/e/1FAIpQLSegKY6UHxMZsxqZUnvx5XNnyJjSUVOUOfQnVws9oGN9msNLPw/viewform?usp=pp_url&entry.2135011275=Texas+A%26M&entry.1179673150=Yes'
 cutoffs:
   A:
     defaultValue: 90
