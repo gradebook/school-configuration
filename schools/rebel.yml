@@ -5,6 +5,7 @@ theme:
   hover: '#2e4c8d'
   background: 'https://static.gradebook.app/sYbR9JXKTI/rebel.jpg'
 gpa: true
+feedbackLink: 'https://docs.google.com/forms/d/e/1FAIpQLSegKY6UHxMZsxqZUnvx5XNnyJjSUVOUOfQnVws9oGN9msNLPw/viewform?usp=pp_url&entry.2135011275=Ole+Miss'
 cutoffs:
   A:
     defaultValue: 90

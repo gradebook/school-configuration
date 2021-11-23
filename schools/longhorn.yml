@@ -5,6 +5,7 @@ theme:
   hover: '#f06c00'
   background: 'https://static.gradebook.app/sYbR9JXKTI/longhorn.jpg'
 gpa: true
+feedbackLink: 'https://docs.google.com/forms/d/e/1FAIpQLSegKY6UHxMZsxqZUnvx5XNnyJjSUVOUOfQnVws9oGN9msNLPw/viewform?usp=pp_url&entry.2135011275=UT+Austin'
 cutoffs:
   A:
     defaultValue: 93
