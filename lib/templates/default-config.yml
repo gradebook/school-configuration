@@ -5,6 +5,7 @@ theme:
   hover: '#7e4f67'
   background: 'https://static.gradebook.app/sYbR9JXKTI/generic.jpg'
 gpa: true
+feedbackLink: null
 cutoffs:
   A+:
     defaultValue: 93
