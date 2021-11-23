@@ -22,6 +22,12 @@
     "gpa": {
       "type": "boolean"
     },
+    "feedbackLink": {
+      "oneOf": [
+        {"type": "string", "format": "url"},
+        {"type": "null"}
+      ]
+    },
     "theme": {
       "type": "object",
       "required": ["primary", "hover"],
