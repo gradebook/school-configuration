@@ -26,7 +26,7 @@
   "devDependencies": {
     "@gradebook/actions-hook": "0.2.0",
     "fs-extra": "10.0.0",
-    "http-server": "0.12.3",
+    "http-server": "0.13.0",
     "xo": "0.40.3"
   },
   "xo": {
