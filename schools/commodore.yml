@@ -5,7 +5,7 @@ theme:
   hover: '#866d4b'
   background: 'https://static.gradebook.app/sYbR9JXKTI/commodore.jpg'
 gpa: true
-feedbackLink: 'https://docs.google.com/forms/d/e/1FAIpQLSegKY6UHxMZsxqZUnvx5XNnyJjSUVOUOfQnVws9oGN9msNLPw/viewform?usp=pp_url&entry.2135011275=Vanderbilt'
+feedbackLink: null
 cutoffs:
   A:
     defaultValue: 93
