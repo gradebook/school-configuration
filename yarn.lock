@@ -216,10 +216,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@gradebook/release-utils@^0.6.5":
-  version "0.6.5"
-  resolved "https://registry.yarnpkg.com/@gradebook/release-utils/-/release-utils-0.6.5.tgz#768611bbecdf74f742e8ef570af0e42e3bd4af75"
-  integrity sha512-okx1yRYwGXybcYvMIT/bSRL71Wq62lYOadbWvOXbK2sDonVcZvUPL3qCS7GMFo6nER47K8nwwkCGYvk38/P60g==
+"@gradebook/release-utils@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@gradebook/release-utils/-/release-utils-0.7.0.tgz#de182f153cbd5a55a5c3a7382b7b9a2c24ce84bd"
+  integrity sha512-MPvdCwpAJfWZjhtp9ZGGxJo9qEOBNZr5CgTolH1zolrim0GmkktuaWXrU5J/KRGxKWtpvWf7MR0u4WKz8UGcSQ==
   dependencies:
     "@types/urijs" "^1.19.17"
     mime "^3.0.0"

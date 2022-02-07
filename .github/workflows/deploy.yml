@@ -47,6 +47,7 @@ jobs:
         yarn release-utils hook
       env:
         HOOK_TYPE: generic
+        HOOK_METHOD: GET
         WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
         WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
         WEBHOOK_DATA: '{}'

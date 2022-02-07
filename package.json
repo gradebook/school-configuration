@@ -24,7 +24,7 @@
     "tailwindcss": "2.2.19"
   },
   "devDependencies": {
-    "@gradebook/release-utils": "^0.6.5",
+    "@gradebook/release-utils": "^0.7.0",
     "fs-extra": "10.0.0",
     "http-server": "14.1.0",
     "xo": "0.47.0"
