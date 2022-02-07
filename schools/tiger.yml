@@ -1,5 +1,7 @@
 version: 0.1
 name: Tiger
+label: Clemson University
+studentEmailDomain: clemson.edu
 theme:
   primary: '#f66733'
   hover: '#ff8a38'

@@ -1,5 +1,7 @@
 version: 0.1
 name: Rebel
+label: Ole Miss - University of Mississippi
+studentEmailDomain: olemiss.edu
 theme:
   primary: '#14213d'
   hover: '#2e4c8d'

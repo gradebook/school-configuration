@@ -1,5 +1,7 @@
 version: 0.1
 name: Wolfpack
+label: NCSU - NC State University
+studentEmailDomain: ncsu.edu
 theme:
   primary: '#000000'
   hover: '#cc0000'

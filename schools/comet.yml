@@ -1,5 +1,7 @@
 version: 0.1
 name: Comet
+label: UTD - University of Texas at Dallas
+studentEmailDomain: utdallas.edu
 theme:
   primary: '#154734'
   hover: '#e87500'

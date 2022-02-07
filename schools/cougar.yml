@@ -1,5 +1,7 @@
 version: 0.1
 name: Cougar
+label: UH - University of Houston
+studentEmailDomain: uh.edu
 theme:
   primary: '#C8102E'
   hover: '#960C22'
