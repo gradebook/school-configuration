@@ -1,5 +1,7 @@
 version: 0.1
 name: Aggie
+label: TAMU - Texas A&M University
+studentEmailDomain: tamu.edu
 theme:
   primary: '#500000'
   hover: '#880000'

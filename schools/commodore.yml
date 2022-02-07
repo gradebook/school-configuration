@@ -1,5 +1,7 @@
 version: 0.1
 name: Commodore
+label: Vanderbilt University
+studentEmailDomain: vanderbilt.edu
 theme:
   primary: '#000000'
   hover: '#866d4b'

@@ -1,5 +1,7 @@
 version: 0.1
 name: Raider
+label: TTU - Texas Tech University
+studentEmailDomain: ttu.edu
 theme:
   primary: '#aa0000'
   hover: '#880000'

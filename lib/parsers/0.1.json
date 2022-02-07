@@ -16,6 +16,13 @@
     "name": {
       "type": "string"
     },
+    "label": {
+      "type": "string"
+    },
+    "studentEmailDomain": {
+      "type": "string",
+      "format": "domain"
+    },
     "partner": {
       "type": "boolean"
     },

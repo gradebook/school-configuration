@@ -1,5 +1,7 @@
 version: 0.1
 name: Gator
+label: UF - University of Florida
+studentEmailDomain: ufl.edu
 theme:
   primary: '#0021a5'
   hover: '#0032fb'

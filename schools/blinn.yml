@@ -1,5 +1,7 @@
 version: 0.1
 name: Blinn
+label: Blinn College
+studentEmailDomain: blinn.edu
 theme:
   primary: '#0033A0'
   hover: '#002D72'

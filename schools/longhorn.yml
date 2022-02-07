@@ -1,5 +1,7 @@
 version: 0.1
 name: Longhorn
+label: UT - University of Texas at Austin
+studentEmailDomain: utexas.edu
 theme:
   primary: '#bf5700'
   hover: '#f06c00'
