@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 
 import {writeFile, mkdir} from 'node:fs/promises';
+import process from 'node:process';
 import {copy} from 'fs-extra';
 import compileSchools from './lib/compile-schools.js';
 import renderMaskableIcon from './lib/templates/icon-maskable.js';
@@ -17,7 +18,7 @@ async function run() {
 	for (const [name, contents] of schoolList) {
 		globalConfig[name] = contents;
 		const singleFile = {
-			[name]: contents
+			[name]: contents,
 		};
 
 		// eslint-disable-next-line no-await-in-loop
@@ -26,14 +27,14 @@ async function run() {
 			writeFile(`./dist/api/v1/${name}/config.json`, JSON.stringify(singleFile)),
 			writeFile(`./dist/api/v1/${name}/icon-maskable.svg`, renderMaskableIcon(contents.theme.primary)),
 			writeFile(`./dist/api/v1/${name}/favicon.svg`, renderFavicon(contents.theme.primary)),
-			writeFile(`./dist/api/v1/${name}/manifest.webmanifest`, renderManifest(name, contents.theme.primary))
+			writeFile(`./dist/api/v1/${name}/manifest.webmanifest`, renderManifest(name, contents.theme.primary)),
 		);
 	}
 
 	writeQueue.push(
 		writeFile('./dist/api/v1/global.json', JSON.stringify(globalConfig)),
 		copy('./site', './dist'), // Copy frontend to dist folder. Note that dist folder already exists
-		copy('_headers', './dist/_headers')
+		copy('_headers', './dist/_headers'),
 	);
 
 	return Promise.all(writeQueue);

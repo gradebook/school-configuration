@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 
 // @ts-check
+import process from 'node:process';
 import {sendPayload} from '@gradebook/actions-hook';
 
 async function doTheWork() {
@@ -20,8 +21,8 @@ async function doTheWork() {
 			payload: '{}',
 			onlyIf: {
 				isPush: true,
-				branch: 'master'
-			}
+				branch: 'master',
+			},
 		});
 	} catch (error) {
 		console.error(error);
