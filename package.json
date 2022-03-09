@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@gradebook/release-utils": "0.7.0",
-    "fs-extra": "10.0.0",
+    "fs-extra": "10.0.1",
     "http-server": "14.1.0",
     "xo": "0.48.0"
   },
