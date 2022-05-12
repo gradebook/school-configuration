@@ -7,7 +7,7 @@ theme:
   hover: '#960C22'
   background: 'https://static.gradebook.app/sYbR9JXKTI/cougar.jpg'
 gpa: true
-feedbackLink: https://docs.google.com/forms/d/e/1FAIpQLSdyvsSFFZi88pr2gISJDIKIK-dYM0_OhoIxJVIcNX1qfkMjUg/viewform?usp=pp_url&entry.2135011275=University+of+Houston
+feedbackLink: null
 cutoffs:
   A:
     defaultValue: 93
