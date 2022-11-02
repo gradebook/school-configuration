@@ -35,16 +35,17 @@ jobs:
       run: node build.js
     - name: Deploy
       if: "github.event_name != 'pull_request'"
-      run: ./scripts/deploy.sh
+      run: |
+        export NETLIFY_DEPLOY_TITLE=$(git log -1 --format="%s (%h)")
+        node node_modules/@gradebook/netlify-deploy/lib/recipe.js
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        NETLIFY_DEPLOY_DIR: dist
+        NETLIFY_PRODUCTION_DEPLOY: 'true'
     - name: Reload
       if: "github.event_name != 'pull_request'"
-      run: |
-        echo "Waiting 5 seconds for Netlify deploy to complete"
-        sleep 5
-        yarn release-utils hook
+      run: yarn release-utils hook
       env:
         HOOK_TYPE: generic
         WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
