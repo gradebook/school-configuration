@@ -36,9 +36,10 @@ jobs:
         NETLIFY_PRODUCTION_DEPLOY: 'true'
     - name: Reload
       if: "github.event_name != 'pull_request'"
-      run: yarn release-utils hook
+      run: |
+        export WEBHOOK_DATA=$(echo '{"timestamp": __}' | sed s/__/`date +"%s"`/)
+        yarn release-utils hook
       env:
         HOOK_TYPE: generic
         WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
         WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
-        WEBHOOK_DATA: '{}'
