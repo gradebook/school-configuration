@@ -35,6 +35,7 @@ async function run() {
 		writeFile('./dist/api/v1/global.json', JSON.stringify(globalConfig)),
 		copy('./site', './dist'), // Copy frontend to dist folder. Note that dist folder already exists
 		copy('_headers', './dist/_headers'),
+		copy('robots.txt', './dist/robots.txt'),
 	);
 
 	return Promise.all(writeQueue);
