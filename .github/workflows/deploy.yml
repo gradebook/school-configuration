@@ -11,7 +11,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'no-deploy') || github.event_name == 'pull_request'"
     runs-on: ubuntu-latest
     steps:
-    - uses: gradebook/minimum-viable-repository/actions/setup@master
+    - uses: gradebook/actions/actions/setup@master
     - name: Install Dependencies
       run: yarn install --frozen-lockfile
     - name: Lint
