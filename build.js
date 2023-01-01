@@ -41,7 +41,9 @@ async function run() {
 	return Promise.all(writeQueue);
 }
 
-run().catch(error => {
+try {
+	await run();
+} catch (error) {
 	console.log(error.excludeStack ? error.toString() : error);
 	process.exit(1);
-});
+}

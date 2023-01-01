@@ -28,7 +28,7 @@
     "@gradebook/release-utils": "0.7.0",
     "fs-extra": "10.1.0",
     "http-server": "14.1.1",
-    "xo": "0.52.3"
+    "xo": "0.53.1"
   },
   "xo": {
     "ignores": [
