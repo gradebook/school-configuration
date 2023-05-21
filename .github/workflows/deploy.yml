@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: gradebook/actions/actions/setup@master
     - name: Install Dependencies
-      run: yarn install --frozen-lockfile
+      run: yarn install --frozen-lockfile --prefer-offline
     - name: Lint
       run: yarn lint
     - name: Compile CSS
