@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@gradebook/netlify-deploy": "^0.1.1",
-    "@gradebook/release-utils": "0.7.0",
+    "@gradebook/release-utils": "0.7.1",
     "fs-extra": "10.1.0",
     "http-server": "14.1.1",
     "xo": "0.53.1"
