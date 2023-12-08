@@ -7,7 +7,7 @@ theme:
   hover: '#8d2024'
   background: 'https://static.gradebook.app/sYbR9JXKTI/bobcat.jpg'
 gpa: true
-feedbackLink: null
+feedbackLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe3_x8lWmWOyykVaTdVtqGfDkQ5khr8KLYbqKnOnk42XFeWsA/viewform?usp=pp_url&entry.2135011275=Texas+State'
 cutoffs:
   A:
     defaultValue: 90
