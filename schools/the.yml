@@ -5,7 +5,7 @@ theme:
   hover: '#7e4f67'
   background: 'https://static.gradebook.app/sYbR9JXKTI/generic.jpg'
 gpa: true
-feedbackLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe3_x8lWmWOyykVaTdVtqGfDkQ5khr8KLYbqKnOnk42XFeWsA/viewform?usp=pp_url&entry.2135011275=Another+college+or+university'
+feedbackLink: null
 cutoffs:
   A+:
     defaultValue: 93
