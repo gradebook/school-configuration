@@ -1,6 +1,9 @@
 // @ts-check
 
-module.exports = {
+/**
+ * @type {import('tailwindcss').Config}
+ */
+export default {
 	content: ['site/**/*.html'],
 	theme: {},
 	variants: {},
