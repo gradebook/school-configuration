@@ -1,4 +1,5 @@
 #! /usr/bin/env node
+// @ts-check
 
 import {writeFile, mkdir} from 'node:fs/promises';
 import process from 'node:process';

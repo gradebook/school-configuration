@@ -1,8 +1,7 @@
 // @ts-check
 
 module.exports = {
-	mode: 'jit',
-	purge: ['site/**/*.html'],
+	content: ['site/**/*.html'],
 	theme: {},
 	variants: {},
 };
