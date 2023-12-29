@@ -35,5 +35,8 @@
       "site/**/*",
       "dist"
     ]
+  },
+  "resolutions": {
+    "eslint-formatter-pretty": "6.0.0"
   }
 }
