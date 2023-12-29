@@ -3,8 +3,10 @@
 /**
  * @type {import('tailwindcss').Config}
  */
-export default {
+const tailwindConfig = {
 	content: ['site/**/*.html'],
 	theme: {},
 	variants: {},
 };
+
+export default tailwindConfig;
