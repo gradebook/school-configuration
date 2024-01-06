@@ -149,10 +149,14 @@
 
 	const root = document.documentElement;
 	let PRIMARY_COLOR = '#500000';
-	let SECONDARY_COLOR = '#AAA';
+	let SECONDARY_COLOR = '#fdfdfd';
 	const urlParams = new URLSearchParams(window.location.search);
 	if (urlParams.has('primary')) {
-		PRIMARY_COLOR =  '#' + urlParams.get('primary');
+		PRIMARY_COLOR = '#' + urlParams.get('primary');
+	}
+
+	if (urlParams.has('secondary')) {
+		SECONDARY_COLOR = '#' + urlParams.get('secondary');
 	}
 
 

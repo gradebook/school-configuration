@@ -1,13 +1,14 @@
 #! /usr/bin/env node
 // @ts-check
 
-import {writeFile, mkdir} from 'node:fs/promises';
+import {writeFile, mkdir, readFile} from 'node:fs/promises';
 import process from 'node:process';
 import {copy} from 'fs-extra';
 import compileSchools from './lib/compile-schools.js';
 import renderMaskableIcon from './lib/templates/icon-maskable.js';
 import renderFavicon from './lib/templates/favicon.js';
 import renderManifest from './lib/templates/webmanifest.js';
+import {renderIndex} from './lib/templates/markup.js';
 
 async function run() {
 	await mkdir('./dist/api/v1', {recursive: true});
@@ -39,7 +40,10 @@ async function run() {
 		copy('robots.txt', './dist/robots.txt'),
 	);
 
-	return Promise.all(writeQueue);
+	await Promise.all(writeQueue);
+
+	const indexTemplate = await readFile('./site/index.html', 'utf8');
+	return writeFile('./dist/index.html', renderIndex(indexTemplate, schoolList));
 }
 
 try {
