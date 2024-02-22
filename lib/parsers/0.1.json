@@ -35,6 +35,9 @@
         },
         "course-search": {
           "type": "boolean"
+        },
+        "direct-support": {
+          "type": "boolean"
         }
       },
       "additionalProperties": false
