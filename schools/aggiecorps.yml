@@ -8,6 +8,9 @@ theme:
   background: 'https://static.gradebook.app/sYbR9JXKTI/aggiecorps.jpg'
 gpa: true
 partner: true
+entitlements:
+  course-search: true
+  collaborate: true
 feedbackLink: null
 cutoffs:
   A:
