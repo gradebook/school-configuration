@@ -26,6 +26,19 @@
     "partner": {
       "type": "boolean"
     },
+    "entitlements": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "collaborate": {
+          "type": "boolean"
+        },
+        "course-search": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
     "gpa": {
       "type": "boolean"
     },
