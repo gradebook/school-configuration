@@ -11,6 +11,7 @@ partner: true
 entitlements:
   course-search: true
   collaborate: true
+  direct-support: true
 feedbackLink: null
 cutoffs:
   A:
