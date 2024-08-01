@@ -20,7 +20,7 @@
     "autoprefixer": "10.4.19",
     "cssnano-cli": "1.0.5",
     "js-yaml": "4.1.0",
-    "postcss": "8.4.39",
+    "postcss": "8.4.40",
     "tailwindcss": "3.4.4"
   },
   "devDependencies": {
