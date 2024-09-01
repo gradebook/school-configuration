@@ -21,7 +21,7 @@
     "cssnano-cli": "1.0.5",
     "js-yaml": "4.1.0",
     "postcss": "8.4.40",
-    "tailwindcss": "3.4.7"
+    "tailwindcss": "3.4.10"
   },
   "devDependencies": {
     "@gradebook/netlify-deploy": "^0.1.1",
