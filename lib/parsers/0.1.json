@@ -38,6 +38,9 @@
         },
         "direct-support": {
           "type": "boolean"
+        },
+        "decimal-course-credits": {
+          "type": "boolean"
         }
       },
       "additionalProperties": false

@@ -6,6 +6,8 @@ theme:
   background: 'https://static.gradebook.app/sYbR9JXKTI/generic.jpg'
 gpa: true
 feedbackLink: null
+entitlements:
+  decimal-course-credits: true
 cutoffs:
   A+:
     defaultValue: 93
