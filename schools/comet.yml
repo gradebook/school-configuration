@@ -11,37 +11,37 @@ feedbackLink: null
 cutoffs:
   A+:
     qualityPoints: 4
-    defaultValue: 93
+    defaultValue: 97
   A:
     qualityPoints: 4
-    defaultValue: 90
+    defaultValue: 93
   A-:
     qualityPoints: 3.67
-    defaultValue: 87
+    defaultValue: 90
   B+:
     qualityPoints: 3.33
-    defaultValue: 83
+    defaultValue: 87
   B:
     qualityPoints: 3
-    defaultValue: 80
+    defaultValue: 83
   B-:
     qualityPoints: 2.67
-    defaultValue: 77
+    defaultValue: 80
   C+:
     qualityPoints: 2.33
-    defaultValue: 73
+    defaultValue: 77
   C:
     qualityPoints: 2
-    defaultValue: 70
+    defaultValue: 73
   C-:
     qualityPoints: 1.67
-    defaultValue: 67
+    defaultValue: 70
   D+:
     qualityPoints: 1.33
-    defaultValue: 63
+    defaultValue: 67
   D:
     qualityPoints: 1
-    defaultValue: 60
+    defaultValue: 63
   D-:
     qualityPoints: 0.67
-    defaultValue: 57
+    defaultValue: 60
